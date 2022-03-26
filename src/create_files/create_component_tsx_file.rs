@@ -2,7 +2,7 @@ use std::fs::File;
 use std::io::Write;
 
 pub fn create_component_tsx_file(component_name: String) -> std::io::Result<()> {
-    let mut file = File::create(format!("{}.tsx", component_name))?;
+    let mut file = File::create(format!("{component_name}/{}.tsx", component_name))?;
 
     let typescript_tsx_template = format!(
         "import styles from '{}.modules.css';
