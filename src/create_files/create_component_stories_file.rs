@@ -1,7 +1,7 @@
 use std::fs::File;
 use std::io::Write;
 
-pub fn create_component_stories_file(component_name: String) -> std::io::Result<()> {
+pub fn create_component_stories_file(component_name: &str) -> std::io::Result<()> {
     let mut file = File::create(format!("{component_name}/{}.stories.tsx", component_name))?;
 
     let component_tsx_template = format!(

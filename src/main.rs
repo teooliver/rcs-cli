@@ -23,10 +23,10 @@ fn main() -> std::io::Result<()> {
 
     create_dir(&component_name)?;
 
-    create_component_stories_file(component_name.to_string())?;
-    create_component_tsx_file(component_name.to_string())?;
-    create_css_module_file(component_name.to_string())?;
-    create_test_component_file(component_name.to_string())?;
+    create_component_stories_file(&component_name)?;
+    create_component_tsx_file(&component_name)?;
+    create_css_module_file(&component_name)?;
+    create_test_component_file(&component_name)?;
 
     Ok(())
 }
