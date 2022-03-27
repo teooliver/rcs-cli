@@ -15,8 +15,8 @@ A cli tool that creates a react component in the following structure:
 ### Usage:
 
 ```sh
+rcs -c <COMPONENT_NAME>
 rcs --component-name <COMPONENT_NAME>
-rcs --c <COMPONENT_NAME>
 ```
 
 ### Options:
